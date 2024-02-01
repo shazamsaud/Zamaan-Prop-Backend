@@ -11,7 +11,10 @@ import listingRouter from "./routes/listing-routes.js";
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin:"zamaan-properties.vercel.app",
+  methods: ["GET","POST","PUT","DELETE"]
+}));
 app.use(cookieParser());
 app.use(express.json());
 
