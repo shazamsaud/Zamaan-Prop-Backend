@@ -12,7 +12,6 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-  origin:"https://zamaan-properties.vercel.app/",
   methods: ["GET","POST","PUT","DELETE"]
 }));
 app.use(cookieParser());
