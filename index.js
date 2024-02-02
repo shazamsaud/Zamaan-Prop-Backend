@@ -11,9 +11,7 @@ import listingRouter from "./routes/listing-routes.js";
 dotenv.config();
 
 const app = express();
-app.use(cors({
-  methods: ["GET","POST","PUT","DELETE"]
-}));
+app.use(cors());
 app.use(cookieParser());
 app.use(express.json());
 
